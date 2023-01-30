@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <p>Một trăm ván cơm nếp</p>
+      <div id="comnep"></div>
+    </div>
+    <div>
+      <p>Một trăm nệp bánh chưng</p>
+      <div id="banhchung"></div>
+    </div>
+    <div class="flex">
+      <div>
+        <p>Voi chín ngà</p>
+        <img src="./assets/voichinhnga.jpg" alt="voichinhnga" width="300" />
+      </div>
+      <div>
+        <p>Gà chín cựa</p>
+        <img src="./assets/gachincua.jpg" alt="gachincua" width="300" />
+      </div>
+      <div>
+        <p>Ngựa chín hồng mao</p>
+        <img src="./assets/ngua.jpg" alt="gachincua" width="300" />
+      </div>
+    </div>
+    <script>
+      var comnep = document.getElementById('comnep');
+      var banhchung = document.getElementById('banhchung');
+      for (let i = 1; i <= 100; i++) {
+        comnep.innerHTML += `<img src="./assets/comnep.png" alt="comnep" width="70" />`;
+        banhchung.innerHTML += `<img src="./assets/banhchung.png" alt="comnep" width="70" />`;
+      }
+    </script>
+  </body>
+</html>
